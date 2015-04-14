@@ -58,6 +58,11 @@
         // we're looking at an email in Gmail
         name = $('h1 .hP').text().trim();
     
+    } else if ($('h1#jobTitle div.left').length){
+        
+        // we're looking at an job title in Elance
+        name = $('h1#jobTitle div.left').text().trim();
+    
     }
     
     else {
